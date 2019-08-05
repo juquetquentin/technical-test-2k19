@@ -17,8 +17,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* IBMTTSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IBMTTSTests.m */; };
-		3BF51DFC5A5255C865DBBF30 /* libPods-IBMTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AEE81515C8CD43F5F7E52B /* libPods-IBMTTS.a */; };
 		5929D74DFECEFDED1B5089AD /* libPods-IBMTTS-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8E513CBFF9546CF0F67108 /* libPods-IBMTTS-tvOSTests.a */; };
+		CEFCD37275AC5EFB08B2986F /* libPods-IBMTTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AEE81515C8CD43F5F7E52B /* libPods-IBMTTS.a */; };
 		F1CEA17FBE98CCDF41C3D6C1 /* libPods-IBMTTSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F3A52375BD0F3FAE0DAA55 /* libPods-IBMTTSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF51DFC5A5255C865DBBF30 /* libPods-IBMTTS.a in Frameworks */,
+				CEFCD37275AC5EFB08B2986F /* libPods-IBMTTS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,6 @@
 				372773EAC26E3DA75F8F913E /* Pods-IBMTTSTests.debug.xcconfig */,
 				DB6361A690AC7D757F3D0215 /* Pods-IBMTTSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +307,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -371,7 +371,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
