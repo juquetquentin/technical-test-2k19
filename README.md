@@ -1,5 +1,7 @@
 # Le jeu du bouche à oreille
 
+# Lancement décrit en fin de fichier 
+
 ## Sujet
 
 Votre mission, si vous l'acceptez, sera de se marrer un bon coup en manipulant les API [text to speech](https://www.ibm.com/watson/services/text-to-speech/) et [speech to text](https://www.ibm.com/watson/services/speech-to-text/) d'IBM.
@@ -50,3 +52,13 @@ Bon courage !
 
 [![Bon chance](https://img.youtube.com/vi/7OGpsoJ1kwk/0.jpg)](https://www.youtube.com/watch?v=7OGpsoJ1kwk)
 
+#### Lancement
+
+1) Ouvrir un terminal et lancer aller dans le dossier du serveur node : 
+    $ cd node_api
+2) Lancer le serveur qui fera les appels à IBM :
+    $ nodemon index.js
+        OU
+    $ npm start
+3) Lancer l'émulateur iOS avec Xcode : - Ouvrir le fichier ios/IBMTTS.xcworkspace
+                                       - Lancer le projet

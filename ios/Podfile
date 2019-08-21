@@ -37,13 +37,3 @@ target 'IBMTTS' do
 
   use_native_modules!
 end
-
-target 'IBMTTS-tvOS' do
-  # Pods for IBMTTS-tvOS
-
-  target 'IBMTTS-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end

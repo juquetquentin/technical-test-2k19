@@ -13,7 +13,7 @@ export default class HomePage extends React.Component {
     constructor(props) {
       super(props)
       /* Set a default value for the game text */
-      this.state = { text: 'This developer is awesome !', turns: "" }
+      this.state = { text: 'This developer is awesome !', turns: '1' }
     }
   
     render() {
@@ -39,7 +39,12 @@ export default class HomePage extends React.Component {
                 />
                 <Button
                   title='Let it Play'
-                  onPress={() => this.props.navigation.navigate('Game', {text: this.state.text, turns: this.state.turns})}
+                  onPress={() => {
+                    if (this.state.text.length && this.state.turns.length)
+                      this.props.navigation.navigate('Game', {text: this.state.text, turns: this.state.turns})
+                    else
+                      alert('You must set up turns and text')
+                    }}
                 />
           </View>
         </View>
